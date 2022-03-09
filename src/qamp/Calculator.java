@@ -41,10 +41,6 @@ public class Calculator {
 
     }
 
-    double areaWithRadiusNumberB() {
-        return (this.numberB * this.numberB) * pi;
-
-    }
 
     int sumElementInArray(int[] myArray) {
         int sum = 0;

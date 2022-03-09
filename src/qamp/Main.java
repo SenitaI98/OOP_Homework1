@@ -7,7 +7,7 @@ public class Main {
         Calculator myCalculator = new Calculator();
         myCalculator.setNumberA(number());
         myCalculator.setNumberB(number());
-        myCalculator.setMyArray(new int[]{3, 6, 8, 9});
+        myCalculator.setMyArray(array());
         System.out.println("Sum of numbers " + myCalculator.numberA + " and " + myCalculator.numberB + " is " + myCalculator.sum());
         System.out.println("Difference of numbers " + myCalculator.numberA + " and " + myCalculator.numberB + " is " + myCalculator.diff());
         System.out.println("Product of numbers " + myCalculator.numberA + " and " + myCalculator.numberB + " is " + myCalculator.product());
@@ -22,5 +22,15 @@ public class Main {
         Scanner reader = new Scanner(System.in);
         int number = reader.nextInt();
         return number;
+    }
+    public static int[] array (){
+        System.out.println("How many elements do you want into array");
+        Scanner reader = new Scanner(System.in);
+        int numberOfElement = reader.nextInt();
+        int[] array = new int[numberOfElement];
+        for (int i =0; i<numberOfElement; i++){
+            array[i] = number();
+        }
+        return array;
     }
 }

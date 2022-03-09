@@ -17,18 +17,20 @@ public class Main {
         System.out.println("Sum of elements in array is " + myCalculator.sumElementInArray(myCalculator.myArray));
         System.out.println("Product of elements in array is " + myCalculator.productElementInArray(myCalculator.myArray));
     }
-    public static int number (){
+
+    public static int number() {
         System.out.println("Please enter a number");
         Scanner reader = new Scanner(System.in);
         int number = reader.nextInt();
         return number;
     }
-    public static int[] array (){
+
+    public static int[] array() {
         System.out.println("How many elements do you want into array");
         Scanner reader = new Scanner(System.in);
         int numberOfElement = reader.nextInt();
         int[] array = new int[numberOfElement];
-        for (int i =0; i<numberOfElement; i++){
+        for (int i = 0; i < numberOfElement; i++) {
             array[i] = number();
         }
         return array;
